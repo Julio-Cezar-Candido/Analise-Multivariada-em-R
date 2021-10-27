@@ -1,0 +1,26 @@
+5 - Matrizes e Arrays
+Matrizes são combinações de vetores com uma dimensão definida.
+
+> Criando matrizes e arrays
+
+Matrizes:
+```{R}
+m1 <- matrix(nrow = 3, ncol = 4)
+m1
+dim(m1)
+
+m2 <- matrix(data = 1:8, nrow = 4, ncol = 2)
+m2
+dim(m2)
+
+m3 <- matrix(c("a", "b", "c", "d"), nrow = 2, ncol = 2, byrow = TRUE)
+m3
+dim(m3)
+```
+    - matrizes também podem ser criadas combinando vetores com as funções "cbind()", "rbind()":
+```{R}
+x <- 1:4
+y <- c(0.5, 0.6, 0.7, 0.8)
+cbind(x, y)
+rbind(x, y)
+```
