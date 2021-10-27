@@ -1,0 +1,29 @@
+1 - Tipo de dados
+
+numeric:
+```{r}
+a <- 2.7
+a
+```
+integer:
+```{r}
+a <- 2L
+a
+```
+complex:
+```{r}
+a <- 0+20i
+a
+```
+character:
+```{r}
+a <- "Cultivar 626BR"
+a
+```
+logical:
+```{r}
+a <- TRUE
+a
+a <- FALSE
+a
+```

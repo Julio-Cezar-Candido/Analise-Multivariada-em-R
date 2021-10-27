@@ -1,0 +1,50 @@
+2 - Classes dos Objetos
+
+método "class (objeto)":
+```{r}
+a <- 2.7
+class(a)
+```
+
+
+```{r}
+a <- 2L
+class(a)
+```
+
+
+```{r}
+a <- 0+20i
+class(a)
+```
+
+```{r}
+a <- "Cultivar 626BR"
+class(a)
+```
+
+
+```{r}
+a <- TRUE
+class(a)
+```
+
+também é possível retornar um valor "logical" com os métodos:
+is.numeric(objeto)
+is.integer(objeto)
+is.character(objeto)
+is.complex(objeto)
+is.logical(objeto)
+
+exemplo:
+```{r}
+a <- 25
+resposta <- is.numeric(a)
+resposta
+```
+
+```{r}
+resposta <- is.character(a)
+resposta
+```
+
