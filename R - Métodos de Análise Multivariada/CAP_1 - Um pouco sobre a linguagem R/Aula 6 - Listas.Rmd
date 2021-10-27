@@ -1,0 +1,17 @@
+6 - Listas
+São tipos especiais de Vetores.
+Podem conter elementos de diferentes classes e comprimentos.
+
+Exemplo:
+```{R}
+x <- list("Cultivar A", 2.2221, c(TRUE, FALSE, FALSE))
+x
+```
+
+> Subsetting
+
+Sua seleção é feita com os operadores "[[]]":
+```{R}
+x <- list("Cultivar A", 2.2221, c(TRUE, FALSE, FALSE))
+x[[2]]
+```

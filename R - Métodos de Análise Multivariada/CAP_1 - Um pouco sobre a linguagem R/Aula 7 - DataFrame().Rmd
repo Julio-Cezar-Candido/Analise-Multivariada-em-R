@@ -1,0 +1,11 @@
+7 - data.frame()
+Data frames:
+    - Podem conter objetos de diferentes classes;
+    - Os vetores combinados devem conter o mesmo comprimento;
+    - Parecidos com matrizes, pois tem entradas de linhas e colunas.
+
+Exemplo:
+```{R}
+x <- data.frame(Cultivar = c("A", "B", "C"), Precoce = c(TRUE, FALSE, TRUE))
+x
+```
