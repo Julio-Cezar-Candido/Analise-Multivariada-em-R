@@ -1,0 +1,31 @@
+1 - Aula 1 - Gráficos de dispersão 2D e draftsman
+
+```{R}
+data(trees)
+head(trees)
+
+# Um gráfico de dispensão entre as duas primeiras variáveis pode ser obtido como o comando:
+plot(Girth ~ Height, data = trees)
+
+# Pode ser traçada uma linha de regressão linear entre essas variáveis, da seguinte forma:
+abline(lm(Girth ~ Height, data = trees), col = "red")
+```
+
+```{R}
+data(trees)
+
+# definindo uma função para desenhar retas de regressão:
+flines <- function(x, y) {
+    points(x, y)
+    abline(lm(y ~ x), col = "red")
+}
+
+# definindo função para plotar as correlações:
+fcor <- function(x, y) {
+    par(usr = c(0, 1, 0, 1))
+    txt <- as.character(round(cor(x, y), 2))
+    text(0.5, 0.5, txt, cex = 3)
+}
+
+pairs(trees, lower.painel = flines, upper.painel = fcor)
+```
