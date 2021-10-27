@@ -1,0 +1,16 @@
+4 - Fatores
+factor é um tipo de vetor usado para representar dados categóricos, ordenados ou não.
+Úteis para ajustar modelos de regressão.
+
+Exemplos:
+```{R}
+x <- factor(c("macho", "fêmea", "macho", "fêmea", "fêmea"))
+x
+```
+
+A ordem dos níveis do fator "x" pode ser ajustados pelo argumento "levels":
+```{R}
+x <- factor(c("macho", "fêmea", "macho", "fêmea", "fêmea"))
+levels = c("macho", "fêmea")
+x
+```
