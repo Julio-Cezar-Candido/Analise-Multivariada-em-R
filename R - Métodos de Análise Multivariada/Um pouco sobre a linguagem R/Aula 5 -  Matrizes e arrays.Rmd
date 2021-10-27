@@ -24,3 +24,40 @@ y <- c(0.5, 0.6, 0.7, 0.8)
 cbind(x, y)
 rbind(x, y)
 ```
+
+Arrays:
+    - são combinações de matrizes de mesma dimensão
+```{R}
+a1 <- array(data = 1:12, dim = c(2, 2, 3))
+a1
+```
+
+> Operações com matrizes
+
+Tabela de operações e operadores:
+____________________________________
+Adição | + 
+Subtração | -
+Multiplicação | %*%
+Inversão | solve()
+Transposição | t()
+Diagonalização | diag()
+Produto de Kronecker | kronecker()
+___________________________________
+
+> Subsetting
+
+Para matrizes usamos "[i, j]" e para arrays usamos "[i, j, k...]":
+    - i = linha
+    - j = coluna
+    - k = matriz
+
+Exemplos:
+```{R}
+m2 <- matrix(data = 1:8, nrow = 4, ncol = 2)
+m2[1, 2]
+m2[2:3, ]
+
+a1 <- array(data = 1:12, dim = c(2, 2, 3))
+a1[1, 2, 3]
+```
