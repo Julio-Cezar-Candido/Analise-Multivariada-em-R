@@ -1,0 +1,10 @@
+1 - Vetores de Soma e de médias
+Soma e médias de um vetor de dados (univariado) são facilmente obitidos com as funçãos:
+"sum()" e "mean()"
+Para somar ou tirar a média de apenas as colunas usando as funções:
+"colSums()" e "colMeans()"
+```{r}
+data(trees)
+colSums(trees)
+colMeans(trees)
+```

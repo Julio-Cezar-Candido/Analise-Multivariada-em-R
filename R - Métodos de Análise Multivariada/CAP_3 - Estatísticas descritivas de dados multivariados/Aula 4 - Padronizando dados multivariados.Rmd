@@ -1,0 +1,16 @@
+4 - Padronizando dados multivariados
+Duas das formas de padronização de variáveis são:
+> Variância unitária;
+> Média zero e variância unitária;
+
+Exemplo:
+```{r}
+data(trees)
+
+treesP <- scale(x = trees, center = TRUE, scale = TRUE)
+head(treesP)
+
+colMeans(treesP)
+
+apply(treesP, 2, sd)
+```

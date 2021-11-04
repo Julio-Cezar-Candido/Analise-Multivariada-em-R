@@ -1,0 +1,19 @@
+> EXERCÍCIOS
+
+- Calcule o vetor da amplitudes totais dos dados 'trees'
+```{r}
+data(trees)
+
+max <- apply(trees, 2, max)
+min <- apply(trees, 2, min)
+teste <- max$Girth
+teste
+# hGirth <- max$Girth - min$Girth
+# hGirth
+#hHeight <- max$Heigth - min$Heigth
+#hHeight
+#hVolume <- max$Volume - min$Volume
+#hVolume
+```
+
+- Calcule 

@@ -1,0 +1,16 @@
+2 - Usando a função apply()
+Para obter medidas como mediana, variâcia, desvio padrão, coeficiente de variação e etc...
+usa-se a função "apply()"
+
+Exemplo da média feita na aula anterior usando a função "apply()":
+```{r}
+data(trees)
+apply(X = trees, MARGIN = 2, FUN = mean)
+```
+
+Exemplo de CV:
+```{r}
+# Como não existe uma função interna para o CV, criaremos umas:
+cv <- function(x) 100 * sd(x) / mean(x)
+apply(X = trees, MARGIN = 2, FUN = cv)
+```

@@ -1,0 +1,8 @@
+3 - Lidando com fatores
+Para lidarmos com dados contendo dois ou mais fatores usamos a função:
+"aggregate()"
+
+```{r}
+data(iris)
+aggregate( .~ Species, FUN = mean, data = iris)
+```
