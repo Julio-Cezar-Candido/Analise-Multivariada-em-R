@@ -1,0 +1,8 @@
+3 - Gráfico de estrelas
+
+```{r}
+library(stars)
+data(mtcars)
+
+stars(mtcars[28:32, 1:5], nrow = 2, key.loc = c(6.8, 1.8), draw.segments = TRUE, col.segments = 1:5)
+```

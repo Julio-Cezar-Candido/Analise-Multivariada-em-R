@@ -1,11 +1,12 @@
 2 - Gráficos de dispersão 3D
 
-Usando o pacote "scatterplot3d":
 ```{r}
 install.packages("scatterplot3d")
 install.packages("lattice")
+install.packages("rgl")
 ```
 
+Usando o pacote "scatterplot3d":
 ```{r}
 library(scatterplot3d)
 data(trees)
@@ -15,3 +16,14 @@ fit <- lm(Volume ~ Girth + Height)
 graph$plane3d(fit, col= "blue")
 ```
 
+Usando o pacote "lattice":
+```{r}
+library(lattice)
+cloud(Volume ~ Girth + Height, data = trees, scale = list(arrows = FALSE))
+```
+
+Usando o pacote "lattice":
+```{r}
+library(rgl)
+plot3d(trees)
+```
