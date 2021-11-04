@@ -1,8 +1,8 @@
-1 - Aula 1 - Gráficos de dispersão 2D e draftsman
+1 - Gráficos de dispersão 2D e draftsman
 
 ```{R}
 data(trees)
-head(trees)
+#head(trees)
 
 # Um gráfico de dispensão entre as duas primeiras variáveis pode ser obtido como o comando:
 plot(Girth ~ Height, data = trees)

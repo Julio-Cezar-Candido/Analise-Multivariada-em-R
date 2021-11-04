@@ -1,0 +1,17 @@
+2 - Gráficos de dispersão 3D
+
+Usando o pacote "scatterplot3d":
+```{r}
+install.packages("scatterplot3d")
+install.packages("lattice")
+```
+
+```{r}
+library(scatterplot3d)
+data(trees)
+attach(trees)
+graph <- scatterplot3d(Volume ~ Girth + Height, pch = 16, angle = 60)
+fit <- lm(Volume ~ Girth + Height)
+graph$plane3d(fit, col= "blue")
+```
+
