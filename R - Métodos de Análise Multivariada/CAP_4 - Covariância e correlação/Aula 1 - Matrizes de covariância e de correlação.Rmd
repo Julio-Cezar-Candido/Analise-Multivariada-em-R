@@ -1,0 +1,23 @@
+1 - Matrizes de covariância e de correlação
+As funções 'cov()' e 'cor()', respectivamente podem calcular os seguintes coeficientes:
+- 'Pearson' (default);
+- 'Kendall';
+- 'Spearman'.
+Alterando-se somente o argumento 'method'.
+
+Exemplo de obtenção da matriz de covariâncias:
+```{r}
+cov(trees)
+```
+
+Obtenção da matriz de correlação:
+```{r}
+cor(trees)
+```
+
+Com a matriz de covariâncias é possivel obter a matriz de correlação:
+```{r}
+m <- cov(trees)
+cov2cor(m)
+```
+Entretanto o inverso não é possivel.
