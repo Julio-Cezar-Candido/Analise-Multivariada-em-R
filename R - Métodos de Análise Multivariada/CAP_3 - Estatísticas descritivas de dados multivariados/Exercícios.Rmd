@@ -20,7 +20,16 @@ aggregate( .~ Species, FUN = erroPadrao, data = iris)
 ```{r}
 data(trees)
 
-treesTeste <- scale(x = trees, center = TRUE, scale = FALSE)
-colMeans(treesTeste)
-apply(treesTeste, 2, sd)
+treesMean0 <- scale(x = trees, center = TRUE, scale = FALSE)
+colMeans(treesMean0)
+apply(treesMean0, 2, sd)
 ```
+
+- Padrize as variáveis de 'trees' para terem variância 1 apenas.
+```{r}
+data(trees)
+
+treesVar1 <- scale(x = trees, center = FALSE, scale = TRUE)
+colMeans(treesVar1)
+apply(treesVar1, 2, sd)
+``` 
