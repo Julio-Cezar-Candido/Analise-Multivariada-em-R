@@ -31,6 +31,7 @@ abline(h = 4.5, v = 6.5, col = 'red')
 - Dica: fixe argumentos 'cs1', 'cs2', 'cs3' da função 'color.scale()' em 1.
 Depois use os operadores de seleção (>, <, >=, <=) para indicar correlação que receberão tons
 de vermelho ou azul.
+
 ```{r}
 library(plotrix)
 library(ellipse)
@@ -44,5 +45,4 @@ mcores <- color.scale(1 - abs(mcor), cs1 > 1, cs2 >= 1, cs3 > 1)
 # elipse
 plotcorr(mcor, col = mcores)
 # delimitando grupos
-abline(h = 4.5, v = 6.5, col = 'red')
 ```
